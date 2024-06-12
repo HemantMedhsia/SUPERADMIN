@@ -47,6 +47,22 @@ app.post('/manager/store', async (req, res) => {
   }
 });
 
+// Route to delete a school by ID
+app.delete('/manager/schools/:id', async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const deletedSchool = await School.findByIdAndDelete(id);
+    if (!deletedSchool) {
+      return res.status(404).send('School not found');
+    }
+    res.status(200).send('School deleted successfully');
+  } catch (error) {
+    res.status(500).send('Error deleting school: ' + error.message);
+  }
+});
+
+
 // Route to get all schools
 app.get('/manager/schools', async (req, res) => {
   try {
