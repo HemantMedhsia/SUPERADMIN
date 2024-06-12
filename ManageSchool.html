@@ -51,127 +51,153 @@
                         </li>
                     </ul>
                 </li>
-        
-            
             </ul>
-
-
         </nav>
 
         <div id="content">
 
             <nav class="navbar navbar-expand-sm navbar-light bg-light">
                 <div class="container-fluid">
-
                     <button type="button" id="sidebarCollapse" class="btn btn-light">
-                        <i>
-                        <img src="img/menu.png" alt=""></i>
+                        <img src="img/menu.png" alt="">
                     </button>
-
-                    
                 </div>
             </nav>
 
-                
-
-                    <main class="container pt-5 tablex">
-                        <div class="card mb-5">
-                            <div class="card-header">Features</div>
-                            <div class="card-block p-0">
-                                <table class="table table-bordered table-lg m-0">
-                                    <thead class="">
-                                        <tr>
-                                            <th>Logo</th>
-                                            <th>School Name</th>
-                                            <th>Email</th>
-                                            <th>Action</th>
-                                
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                
-                                            <td><img src="https://i.pinimg.com/736x/07/33/ba/0733ba760b29378474dea0fdbcb97107.jpg" alt="" style="border-radius: 50%; width: 35px;"></td>
-                                            <td>ABC school</td>
-                                            <td>jhlilk22@yahoo.com</td>
-                                            <td>
-
-                                                <button type="button" class="btn btn-success"><i class="fas fa-edit" aria-hidden="true"></i></button>
-                                                <button type="button" class="btn btn-primary"><i class="far fa-trash-alt" aria-hidden="true"></i></button>
-                                                <button type="button" class="btn btn-success"><i  aria-hidden="true"></i>Active</button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                
-                                            <td><img src="https://i.pinimg.com/736x/07/33/ba/0733ba760b29378474dea0fdbcb97107.jpg" alt="" style="border-radius: 50%; width: 35px;"></td>
-                                            <td>xyz school</td>
-                                            <td>jhlilk22@yahoo.com</td>
-                                            <td>
-
-                                                <button type="button" class="btn btn-success"><i class="fas fa-edit" aria-hidden="true"></i></button>
-                                                <button type="button" class="btn btn-primary"><i class="far fa-trash-alt" aria-hidden="true"></i></button>
-                                                <button type="button" class="btn btn-danger"><i  aria-hidden="true"></i>InActive</button>
-                                            </td>
-                                        </tr>
-                    
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="card-footer p-0">
-                                <nav aria-label="...">
-                                    <ul class="pagination justify-content-end mt-3 mr-3">
-                                        <li class="page-item disabled">
-                                            <span class="page-link">Previous</span>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item active">
-                                            <span class="page-link">2<span class="sr-only">(current)</span>
-                                            </span>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                
-                    </main>
-
-
-
-                
-           
+            <main class="container pt-5 tablex">
+                <div class="card mb-5">
+                    <div class="card-header">Features</div>
+                    <div class="card-block p-0">
+                        <table class="table table-bordered table-lg m-0">
+                            <thead class="">
+                                <tr>
+                                    <th>Logo</th>
+                                    <th>School Name</th>
+                                    <th>Email</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="schoolTableBody">
+                                <!-- Dynamic rows will be added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer p-0">
+                        <nav aria-label="...">
+                            <ul class="pagination justify-content-end mt-3 mr-3">
+                                <li class="page-item disabled">
+                                    <span class="page-link">Previous</span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active">
+                                    <span class="page-link">2<span class="sr-only">(current)</span></span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </main>
 
         </div>
     </div>
-        <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © SmartVidyarthi  2024. Designed &amp; Developed by <a href="#" style="color: green;" target="blank">DKDM infotech pvt ltd</a></span>
-                
-            </div>
-        </footer>
 
+    <footer class="footer">
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © SmartVidyarthi 2024. Designed & Developed by <a href="#" style="color: green;" target="blank">DKDM infotech pvt ltd</a></span>
+        </div>
+    </footer>
 
-
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-            <script src="https://kit.fontawesome.com/cbe897d4cf.js" crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function () {
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').toggleClass('active');
-                });
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cbe897d4cf.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
             });
-        </script>
+    
+            // Function to handle edit button click
+            function handleEditClick(schoolId) {
+                // Redirect to the edit page with the school ID
+                window.location.href = 'EditSchool.html?id=' + schoolId;
+            }
+    
+            // Function to handle delete button click
+            function handleDeleteClick(schoolId) {
+                // Send a delete request to the backend with the school ID
+                fetch('http://127.0.0.1:8000/manager/schools/' + schoolId, {
+                    method: 'DELETE'
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Reload the page after successful deletion
+                        window.location.reload();
+                    } else {
+                        throw new Error('Failed to delete school');
+                    }
+                })
+                .catch(error => console.error('Error deleting school:', error));
+            }
+    
+            // Fetch school data from backend and populate table
+            fetch('http://127.0.0.1:8000/manager/schools')
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('schoolTableBody');
+                    tableBody.innerHTML = ''; // Clear any existing rows
+    
+                    data.forEach(school => {
+                        const row = document.createElement('tr');
+    
+                        const logoCell = document.createElement('td');
+                        const img = document.createElement('img');
+                        img.src = 'https://i.pinimg.com/736x/07/33/ba/0733ba760b29378474dea0fdbcb97107.jpg';
+                        img.style.borderRadius = '50%';
+                        img.style.width = '35px';
+                        logoCell.appendChild(img);
+    
+                        const nameCell = document.createElement('td');
+                        nameCell.textContent = school.name;
+    
+                        const emailCell = document.createElement('td');
+                        emailCell.textContent = school.email;
+    
+                        const actionCell = document.createElement('td');
+                        const editButton = document.createElement('button');
+                        editButton.className = 'btn btn-success';
+                        editButton.innerHTML = '<i class="fas fa-edit" aria-hidden="true"></i>';
+                        editButton.addEventListener('click', () => handleEditClick(school._id));
+    
+                        const deleteButton = document.createElement('button');
+                        deleteButton.className = 'btn btn-primary';
+                        deleteButton.innerHTML = '<i class="far fa-trash-alt" aria-hidden="true"></i>';
+                        deleteButton.addEventListener('click', () => handleDeleteClick(school._id));
+    
+                        const statusButton = document.createElement('button');
+                        statusButton.className = 'btn btn-success';
+                        statusButton.innerHTML = 'Active';
+    
+                        actionCell.appendChild(editButton);
+                        actionCell.appendChild(deleteButton);
+                        actionCell.appendChild(statusButton);
+    
+                        row.appendChild(logoCell);
+                        row.appendChild(nameCell);
+                        row.appendChild(emailCell);
+                        row.appendChild(actionCell);
+    
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => console.error('Error fetching school data:', error));
+        });
+    </script>
+    
 
 </body>
 

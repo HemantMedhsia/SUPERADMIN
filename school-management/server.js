@@ -1,3 +1,4 @@
+// Existing imports and setup...
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -32,16 +33,11 @@ const schoolSchema = new mongoose.Schema({
 
 const School = mongoose.model('School', schoolSchema);
 
-// Route to handle form submission
+// Route to add a new school
 app.post('/manager/store', async (req, res) => {
   const { name, phone_number, email, password } = req.body;
 
-  const newSchool = new School({
-    name,
-    phone_number,
-    email,
-    password,
-  });
+  const newSchool = new School({ name, phone_number, email, password });
 
   try {
     await newSchool.save();
@@ -51,6 +47,17 @@ app.post('/manager/store', async (req, res) => {
   }
 });
 
+// Route to get all schools
+app.get('/manager/schools', async (req, res) => {
+  try {
+    const schools = await School.find({}, 'name email');
+    res.status(200).json(schools);
+  } catch (error) {
+    res.status(500).send('Error fetching school data: ' + error.message);
+  }
+});
+
+// Start the server
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server is running on http://127.0.0.1:${port}`);
 });
